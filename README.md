@@ -14,5 +14,5 @@ This project is a responsive website dedicated to the Serbia national football t
 ## Description
 The website presents information about the Serbia national football team, including players, match details, and general team overview.
 
-## Learning Outcome
-This project helped me improve my front-end development skills and gain practical experience with Bootstrap framework.
+## Note
+A gameplay video is not included in this repository due to file size limitations.
