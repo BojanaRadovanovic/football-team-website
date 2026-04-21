@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FSS - Galerija</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Galerija fotografija fudbalske reprezentacije Srbije, trenuci sa utakmica, dodele priznanja i selekcije.">
+<meta name="keywords" content="Galerija, slike, reprezentacija Srbije, Piksi, Mitrović, fudbal, fotografije">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="stil.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="icon" type="image/png" href="slike/logo1.png">
+</head>
+<body>
+
+  <!--Navigacija-->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">
+    <img src="slike/logo.png" alt="FSS Logo" id="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sazimajuciKontejner">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="sazimajuciKontejner">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+        <li class="nav-item"><a class="nav-link" href="takmicenja.html">Takmičenja</a></li>
+        <li class="nav-item"><a class="nav-link active" href="galerija.html">Galerija</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+        <li class="nav-item"><a class="nav-link" href="anketa.html">Anketa</a></li>
+        <li class="nav-item"><a class="nav-link" href="karte.html">Kupovina karata</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Kraj navigacije-->
+
+<!--Header-->
+<header class="text-light text-center">
+ <div class="container">
+<div class="row justify-content-center align-items-center">
+    <div class="row mt-4">
+      <div class="col text-center">
+         <h1 class="mb-1">Galerija</h1>
+          <p class="lead mb-4">Izabrane fotografije naše reprezentacije</p>
+      </div>
+    </div>
+  </div>
+</header>
+<!---Kraj header-a-->
+
+<section class="container py-5">
+  <div class="row g-3">
+    <div class="col-6 col-md-3 text-center">
+      <img src="slike/Piksi.jpg" class="img-fluid rounded shadow gallery-img" data-index="0" alt="Selektor">
+      <p class="mt-2">Selektor Dragan Stojković - Piksi</p>
+    </div>
+    <div class="col-6 col-md-3 text-center">
+      <img src="slike/ZlatnaLopta.webp" class="img-fluid rounded shadow gallery-img" data-index="1" alt="Zlatna lopta">
+      <p class="mt-2">Dodela najprestižnijeg priznanja "Zlatna lopta"</p>
+    </div>
+    <div class="col-6 col-md-3 text-center">
+      <img src="slike/Reprezentacija.jpeg" class="img-fluid rounded shadow gallery-img" data-index="2" alt="Reprezentacije Srbije u meču protiv Engleske">
+      <p class="mt-2">Reprezentacije Srbije u meču protiv Engleske</p>
+    </div>
+    <div class="col-6 col-md-3 text-center">
+      <img src="slike/Konferencija.webp" class="img-fluid rounded shadow gallery-img" data-index="3" alt="Konferencija za medije pre meča sa Engleskom">
+      <p class="mt-2">Konferencija za medije pre meča sa Engleskom</p>
+    </div>
+    <div class="col-6 col-md-3 text-center">
+      <img src="slike/Mitrovic.jpeg" class="img-fluid rounded shadow gallery-img" data-index="4" alt="Specijalna plaketa UEFA Aleksandru Mitroviću">
+      <p class="mt-2">Specijalna plaketa UEFA Aleksandru Mitroviću </p>
+    </div>
+    <div class="col-6 col-md-3 text-center">
+      <img src="slike/KadetskaRep.jpg" class="img-fluid rounded shadow gallery-img" data-index="5" alt="Kadetska reprezentacija Srbije">
+      <p class="mt-2">Kadetska reprezentacija Srbije nakon pobede Portugala</p>
+    </div>
+    <div class="col-6 col-md-3 text-center">
+      <img src="slike/OmladinskaRep.jpeg" class="img-fluid rounded shadow gallery-img" data-index="6" alt="Omladinska reprezentacija Srbije">
+      <p class="mt-2">Omladinska reprezentacija Srbije</p>
+    </div>
+    <div class="col-6 col-md-3 text-center">
+      <img src="slike/Kadetkinje.jpeg" class="img-fluid rounded shadow gallery-img" data-index="7" alt="Kadetkinje">
+      <p class="mt-2">Kadetkinje Srbije posle pobede u Slovačkoj</p>
+    </div>
+</section>
+
+<div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark">
+      <div class="modal-body text-center p-0">
+        <img id="lightboxImage" src="" class="img-fluid">
+        <p id="lightboxCaption" class="text-light mt-2"></p>
+      </div>
+      <button class="btn btn-dark position-absolute top-50 start-0 translate-middle-y" id="prevBtn">
+        <i class="bi bi-arrow-left-circle fs-1"></i>
+      </button>
+      <button class="btn btn-dark position-absolute top-50 end-0 translate-middle-y" id="nextBtn">
+        <i class="bi bi-arrow-right-circle fs-1"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<!--footer-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <!-- Logo -->
+      <div class="col-md-4 mb-3">
+        <img src="slike/logo.png" alt="FSS logo" id="logo-footer" style="height:60px;">
+      </div>
+
+      <!-- Kontakt informacije -->
+      <div class="col-md-4 mb-3">
+        <p class="mb-1">Terazije 35, 11103 Beograd, Srbija</p>
+        <p class="mb-1">+381 11 3233 447</p>
+        <p class="mb-0"><a href="mailto:office@fss.rs" class="text-light text-decoration-none">office@fss.rs</a></p>
+      </div>
+
+      <!-- Društvene mreže -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Pratite nas</h5>
+        <a href="https://www.facebook.com/FudbalskiSavezSrbije" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="https://www.instagram.com/fudbalskisavezsrbije/" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="https://www.youtube.com/user/FSSrbije" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+
+    <!-- Copyright -->
+    <div class="text-center small">
+      <span><a href="index.html" class="text-decoration-none text-light">FSS</a> © Sva prava zadržana.</span>
+      <div>Designed by NRT14623</div>
+    </div>
+  </div>
+</footer>
+<!--Kraj footer-a-->
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<!---JS-->
+<script>
+const images = document.querySelectorAll(".gallery-img");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxCaption = document.getElementById("lightboxCaption");
+const modal = new bootstrap.Modal(document.getElementById("lightboxModal"));
+let currentIndex = 0;
+function showImage(index) {
+  const img = images[index];
+  lightboxImage.src = img.src;
+  lightboxCaption.textContent = img.nextElementSibling.textContent;
+  currentIndex = index;
+  modal.show();
+}
+
+images.forEach((img, index) => {
+  img.addEventListener("click", () => showImage(index));
+});
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
+});
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  showImage(currentIndex);
+});
+
+</script>
+
+
+</body>
+</html>

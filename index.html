@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FSS - Početna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Zvanična stranica fudbalske reprezentacije Srbije, vesti, rezultati, takmičenja, igrači i ankete za navijače.">
+<meta name="keywords" content="Fudbal, Srbija, reprezentacija, FSS, vesti, fudbalski savezi, utakmice, fudbaleri, takmičenja">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="stil.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="icon" type="image/png" href="slike/logo1.png">
+</head>
+<body>
+
+  <!--Navigacija-->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">
+    <img src="slike/logo.png" alt="FSS Logo" id="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sazimajuciKontejner">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="sazimajuciKontejner">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Početna</a></li>
+        <li class="nav-item"><a class="nav-link" href="takmicenja.html">Takmičenja</a></li>
+        <li class="nav-item"><a class="nav-link" href="galerija.html">Galerija</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+        <li class="nav-item"><a class="nav-link" href="anketa.html">Anketa</a></li>
+        <li class="nav-item"><a class="nav-link" href="karte.html">Kupovina karata</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Kraj navigacije-->
+
+<!--Header-->
+<header class="text-light text-center">
+  <div class="container">
+<div class="row justify-content-center align-items-center">
+
+ <div class="col-auto text-center">   
+<h2 class="h5 mt-2 mb-0">Football Association of Serbia</h2>
+</div>
+<!-- Desna strana logo -->
+      <div class="col-auto text-center ">
+        <img src="slike/logo.png" alt="Logo FSS" id="logo-header">
+      </div>
+    </div>
+    <!-- Dugme-->
+    <div class="row mt-4">
+      <div class="col text-center">
+        <a href="takmicenja.html" class="btn btn-outline-secondary">
+          Pogledaj aktuelna takmičenja
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<!---Kraj header-a-->
+
+
+<!---Carousel-->
+<section class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8"> 
+      <div id="carouselExampleCaptions" class="carousel slide shadow rounded">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="slike/Reprezentacija1.jpeg" class="d-block w-100" alt="Orlovi 2025">
+            <div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+              <h5>Orlovi 2025</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="slike/Reprezentacija2.jpg" class="d-block w-100" alt="Orlići 2025">
+            <div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+              <h5>Orlići 2025</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="slike/Reprezentacija3.jpg" class="d-block w-100" alt="Ženska selekcija">
+            <div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+              <h5>Ženska "A" selekcija</h5>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Igraci-->
+<section class="container mt-5">
+  <h2 class="text-center mb-4">Najbolji fudbaleri</h2>
+  <div class="row justify-content-center g-4">
+
+    <!-- Mitrović -->
+    <div class="col-md-4">
+      <div class="card text-center bg-white border-secondary h-100">
+        <img src="slike/Mitrovic.jpg" class="card-img-top img-fluid" alt="Aleksandar Mitrović" style="max-height:250px; object-fit:contain;">
+        <div class="card-body">
+          <h5 class="card-title text-dark"><strong>Aleksandar Mitrović</strong></h5>
+          <p class="card-text text-secondary small">
+            Najbolji strelac u istoriji Srbije. Poznat po snazi i instinktu za gol, 
+            trenutno igra u Saudijskoj Arabiji i ostaje lider reprezentacije.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vlahović -->
+    <div class="col-md-4">
+      <div class="card text-center bg-white border-secondary h-100">
+        <img src="slike/Vlahovic.jpg" class="card-img-top img-fluid" alt="Dušan Vlahović" style="max-height:250px; object-fit:contain;">
+        <div class="card-body">
+          <h5 class="card-title text-dark"><strong>Dušan Vlahović</strong></h5>
+          <p class="card-text text-secondary small">
+            Napadač Juventusa i jedan od najtalentovanijih mladih igrača Evrope. 
+            Odlikuje ga snažan šut i fantastičan osećaj za gol.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jović -->
+    <div class="col-md-4">
+      <div class="card text-center bg-white border-secondary h-100">
+        <img src="slike/Jovic.jpg" class="card-img-top img-fluid" alt="Luka Jović" style="max-height:250px; object-fit:contain;">
+        <div class="card-body">
+          <h5 class="card-title text-dark"><strong>Luka Jović</strong></h5>
+          <p class="card-text text-secondary small">
+            Napadač koji je karijeru gradio u Benfici, Frankfurtu i Real Madridu. 
+            Danas je važan član reprezentacije sa iskustvom u najvećim ligama sveta.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!---Vesti-->
+   <section class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="text-center mb-4">Najnovije vesti</h2>
+      <div class="list-group shadow">
+     <a href="https://fss.rs/wu17-kadetkinje-slavile-u-drugoj-proveri-u-slovackoj/" 
+   target="_blank" rel="noopener" class="list-group-item list-group-item-action">
+  <div class="row align-items-center">
+
+    <div class="col-md-4">
+      <img src="slike/Vesti1.jpeg" class="img-fluid rounded" alt="Kadetska reprezentacija Srbije">
+    </div>
+    <div class="col-md-8">
+      <h5>Kadetkinje slavile u drugoj proveri u Slovačkoj</h5>
+      <p class="mb-0">
+        Ženska kadetska reprezentacija Srbije (WU17) zabeležila je pobedu u drugoj prijateljskoj utakmici 
+        protiv Slovačke u Senecu. Naše devojke su slavile rezultatom 2:0, prikazavši odličnu igru i veliku borbenost. 
+        Ovaj trijumf predstavlja važan korak u pripremama za kvalifikacije.
+      </p>
+    </div>
+  </div>
+</a>
+
+<a href="https://fss.rs/poruka-koja-se-pamti-fudbaljezasve-u-fokusu-sedmog-kola-super-lige-srbije/" 
+   target="_blank" rel="noopener" class="list-group-item list-group-item-action">
+  <div class="row align-items-center">
+    
+    <div class="col-md-4">
+      <img src="slike/Vesti.jpg" class="img-fluid rounded" alt="Fudbal je za sve">
+    </div>
+    <div class="col-md-8">
+      <h5>Poruka koja se pamti: #FudbalJeZaSve u fokusu sedmog kola Super lige Srbije</h5>
+      <p class="mb-0">
+        Sedmo kolo Super lige Srbije proteklo je u znaku društveno odgovorne kampanje 
+        <strong>#FudbalJeZaSve</strong>. Poruka inkluzije i zajedništva poslata je sa svih 
+        stadiona širom zemlje, naglašavajući važnost jednakih šansi i dostupnosti fudbala 
+        svima koji ga vole.
+      </p>
+    </div>
+  </div>
+</a>
+
+<a href="https://fss.rs/u19-selektor-gordan-petric-nakon-31-memorijalnog-turnira-stevan-cele-vilotic-i-tri-pobede-omladinske-selekcije-ova-generacija-skrenula-je-paznju-na-sebe-svojim-kvalitetom-talentom-i-ponasanjem/" 
+   target="_blank" rel="noopener" class="list-group-item list-group-item-action">
+  <div class="row align-items-center">
+    
+    <div class="col-md-4">
+      <img src="slike/Vesti2.jpg" class="img-fluid rounded" alt="U19 selektor Gordan Petrić">
+    </div>
+    <div class="col-md-8">
+      <h5>U19 selektor Gordan Petrić nakon 31. memorijalnog turnira „Stevan Ćele Vilotić“</h5>
+      <p class="mb-0">
+        Omladinska selekcija Srbije ostvarila je tri pobede na memorijalnom turniru 
+        „Stevan Ćele Vilotić“, a selektor <strong>Gordan Petrić</strong> istakao je da je 
+        ova generacija skrenula pažnju na sebe kvalitetom, talentom i ponašanjem, 
+        što uliva optimizam pred buduće izazove.
+      </p>
+    </div>
+  </div>
+</a>
+
+<a href="https://fss.rs/u17-selektor-igor-matic-nakon-osvojenog-turnira-u-portu-srbija-ima-buducnost-i-kvalitet-u-ovim-momcima/" 
+   target="_blank" rel="noopener" class="list-group-item list-group-item-action">
+  <div class="row align-items-center">
+
+    <div class="col-md-4">
+      <img src="slike/Vesti3.jpg" class="img-fluid rounded" alt="U17 selektor Igor Matić">
+    </div>
+    <div class="col-md-8">
+      <h5>U17 selektor Igor Matić nakon osvojenog turnira u Portu</h5>
+      <p class="mb-0">
+        Kadetska reprezentacija Srbije osvojila je međunarodni turnir u <strong>Portu</strong>, 
+        a selektor <strong>Igor Matić</strong> poručio je da Srbija ima budućnost i kvalitet 
+        u ovim momcima, koji su pokazali veliku posvećenost i talenat protiv najjačih rivala.
+      </p>
+    </div>
+  </div>
+</a>
+
+<a href="https://fss.rs/72600-2/" target="_blank" rel="noopener" class="list-group-item list-group-item-action">
+  <div class="row align-items-center">
+   
+    <div class="col-md-4">
+      <img src="slike/Vesti4.jpeg" class="img-fluid rounded" alt="Posle pobede Letonije, poraz od Engleske">
+    </div>
+    <div class="col-md-8">
+      <h5>Posle pobede protiv Letonije, poraz od Engleske</h5>
+      <p class="mb-0">
+        Reprezentacija Srbije poražena je u četvrtom meču kvalifikacija za Prvenstvo sveta - Engleska je slavila 5:0 (0:2). 
+        Septembarski kvalifikacioni ciklus završen je pobedom nad Letonijom i porazom od Engleske, dok se naša selekcija nastavlja pripremati za ciljeve u SAD, Meksiku i Kanadi.
+      </p>
+    </div>
+  </div>
+</a>
+
+<a href="https://fss.rs/u19-portugal-srbija-memorijalni-turnir-stevan-cele-vilotic/" target="_blank" rel="noopener" class="list-group-item list-group-item-action">
+  <div class="row align-items-center">
+    
+    <div class="col-md-4">
+      <img src="slike/Vesti5.jpg" class="img-fluid rounded" alt="U19 Portugal vs Srbija Memorijal Stevan Ćele Vilotić">
+    </div>
+    <div class="col-md-8">
+      <h5>U19: Portugal - Srbija, memorijalni turnir „Stevan Ćele Vilotić“</h5>
+      <p class="mb-0">
+        Juniori Srbije odigrali su utakmicu protiv Portugala na memorijalnom turniru „Stevan Ćele Vilotić“. 
+        Meč je poslužio kao važna provera u okviru priprema, a naš tim je pokazao želju i borbenost na terenu.
+      </p>
+    </div>
+  </div>
+</a>
+ </div>
+ </div> 
+ </div>
+</section>
+
+
+ <!--Anketa za fanove-->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Anketa za fanove</h2>
+
+  <!-- Slika -->
+  <div class="text-center mb-4">
+    <img src="slike/Radonjic.jpg" alt="Nemanja Radonjić" 
+         class="img-fluid rounded shadow" 
+         style="max-width:400px; height:auto;">
+  </div>
+
+  <!-- Forma -->
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form id="fanOdgovor" class="text-start p-4 rounded shadow">
+        <label class="form-label ">Da li želite da se Nemanja Radonjić vrati u reprezentaciju?</label>
+
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="odgovor" id="da" value="Da">
+          <label class="form-check-label" for="da">Da, zaslužuje novu šansu</label>
+        </div>
+
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="odgovor" id="ne" value="Ne">
+          <label class="form-check-label" for="ne">Ne, ne treba da se vraća</label>
+        </div>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="radio" name="odgovor" id="mozda" value="Možda">
+          <label class="form-check-label" for="mozda">Možda, zavisi od forme</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Pošalji</button>
+      </form>
+
+      <div id="alertFan" class="alert alert-success mt-3 d-none" role="alert">
+        Hvala što ste glasali!
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--footer-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <!-- Logo -->
+      <div class="col-md-4 mb-3">
+        <img src="slike/logo.png" alt="FSS logo" id="logo-footer" style="height:60px;">
+      </div>
+
+      <!-- Kontakt informacije -->
+      <div class="col-md-4 mb-3">
+        <p class="mb-1">Terazije 35, 11103 Beograd, Srbija</p>
+        <p class="mb-1">+381 11 3233 447</p>
+        <p class="mb-0"><a href="mailto:office@fss.rs" class="text-light text-decoration-none">office@fss.rs</a></p>
+      </div>
+
+      <!-- Društvene mreže -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Pratite nas</h5>
+        <a href="https://www.facebook.com/FudbalskiSavezSrbije" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="https://www.instagram.com/fudbalskisavezsrbije/" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="https://www.youtube.com/user/FSSrbije" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+
+    <!-- Copyright -->
+    <div class="text-center small">
+      <span><a href="index.html" class="text-decoration-none text-light">FSS</a> © Sva prava zadržana.</span>
+      <div>Designed by NRT14623</div>
+    </div>
+  </div>
+</footer>
+<!--Kraj footer-a-->
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('fanOdgovor');
+  const alertBox = document.getElementById('alertFan');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alertBox.classList.remove('d-none');
+  });
+});
+</script>
+
+
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

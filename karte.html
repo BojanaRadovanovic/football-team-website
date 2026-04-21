@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FSS - Kupovina karata</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kupite ulaznice za utakmice fudbalske reprezentacije Srbije i bodrite Orlove uživo sa tribina.">
+<meta name="keywords" content="Kupovina karata, ulaznice, Srbija fudbal, reprezentacija, Marakana, utakmice, FSS">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="stil.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="icon" type="image/png" href="slike/logo1.png">
+</head>
+<body>
+
+  <!--Navigacija-->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">
+    <img src="slike/logo.png" alt="FSS Logo" id="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sazimajuciKontejner">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="sazimajuciKontejner">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+        <li class="nav-item"><a class="nav-link" href="takmicenja.html">Takmičenja</a></li>
+        <li class="nav-item"><a class="nav-link" href="galerija.html">Galerija</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+        <li class="nav-item"><a class="nav-link" href="anketa.html">Anketa</a></li>
+        <li class="nav-item"><a class="nav-link active" href="karte.html">Kupovina karata</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Kraj navigacije-->
+
+<!--Header-->
+<header class="text-light text-center">
+ <div class="container">
+<div class="row justify-content-center align-items-center">
+    <div class="row mt-4">
+      <div class="col text-center">
+         <h1 class="mb-1">Kupovina karata</h1>
+          <p class="lead mb-4">Kupite vaše karte i podržite našu reprezentaciju</p>
+      </div>
+    </div>
+  </div>
+</header>
+<!---Kraj header-a-->
+
+<section class="container mb-5 mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow">
+        <div class="card-body p-4">
+          <form id="formaKarte">
+            <div class="mb-3">
+              <label for="ime" class="form-label">Ime i prezime</label>
+              <input type="text" class="form-control" name="ime" id="ime" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail adresa</label>
+              <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="telefon" class="form-label">Telefon</label>
+              <input type="tel" class="form-control" name="telefon" id="telefon" required>
+            </div>
+            <div class="mb-3">
+              <label for="utakmica" class="form-label">Izaberite utakmicu</label>
+              <select class="form-select" name="utakmica" id="utakmica" required>
+                <option value="">Odaberite</option>
+                <option>Srbija - Engleska (09.09.2025, Srbija, Marakana)</option>
+                <option>Srbija - Andora (10.09.2025, Srbija, Marakana)</option>
+                 <option>Srbija - Latvija (11.09.2025, Srbija, Marakana)</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="karte" class="form-label">Broj karata</label>
+              <input type="number" class="form-control" name="karte" id="karte" min="1" max="10" value="1" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Tip ulaznice</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tip" id="standard" value="standard" checked>
+                <label class="form-check-label" for="standard">Sever-Jug (1000 RSD)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tip" id="vip" value="vip">
+                <label class="form-check-label" for="vip">Zapad-Istok (2000 RSD)</label>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary px-4">Kupi kartu</button>
+            </div>
+          </form>
+    <div id="poruka" class="alert alert-success text-center mt-3 d-none" role="alert">
+    <div>
+      <strong>Uspešno</strong> ste kupili kartu za utakmicu! Možete nastaviti kupovinu ili se vratiti na <a href="takmicenja.html">aktuelna takmičenja</a>.
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!--footer-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <!-- Logo -->
+      <div class="col-md-4 mb-3">
+        <img src="slike/logo.png" alt="FSS logo" id="logo-footer" style="height:60px;">
+      </div>
+
+      <!-- Kontakt informacije -->
+      <div class="col-md-4 mb-3">
+        <p class="mb-1">Terazije 35, 11103 Beograd, Srbija</p>
+        <p class="mb-1">+381 11 3233 447</p>
+        <p class="mb-0"><a href="mailto:office@fss.rs" class="text-light text-decoration-none">office@fss.rs</a></p>
+      </div>
+
+      <!-- Društvene mreže -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Pratite nas</h5>
+        <a href="https://www.facebook.com/FudbalskiSavezSrbije" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="https://www.instagram.com/fudbalskisavezsrbije/" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="https://www.youtube.com/user/FSSrbije" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+
+    <!-- Copyright -->
+    <div class="text-center small">
+      <span><a href="index.html" class="text-decoration-none text-light">FSS</a> © Sva prava zadržana.</span>
+      <div>Designed by NRT14623</div>
+    </div>
+  </div>
+</footer>
+<!--Kraj footer-a-->
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const forma = document.getElementById("formaKarte");
+  const uspeh = document.getElementById("poruka");
+
+  forma.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const ime = document.getElementById("ime").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const utakmica = document.getElementById("utakmica").value;
+    uspeh.classList.add("d-none");
+    if (ime && email && utakmica) {
+      uspeh.classList.remove("d-none");
+      forma.reset();
+    }
+  });
+</script>
+
+</body>
+</html>
